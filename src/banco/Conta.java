@@ -1,3 +1,5 @@
+package banco;
+
 public abstract class Conta implements IConta {
 
     private static final int AGENCIA_PADRAO = 1;
@@ -47,7 +49,7 @@ public abstract class Conta implements IConta {
     protected void imprimirInformacoesEmComum() {
         System.out.printf("Titular: %s \n", this.cliente.getNome());
         System.out.printf("Agencia: %d \n", this.agencia);
-        System.out.printf("Conta: %d \n", this.numero);
+        System.out.printf("conta.Conta: %d \n", this.numero);
         System.out.printf("Saldo: %.2f \n", this.saldo);
     }
 }
